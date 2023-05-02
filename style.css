@@ -39,7 +39,7 @@ body{
 }
 
 
-/*@keyframes slidearound {
+@keyframes slidearound {
   from {
      margin-right: -50%;
      width: 150%;
@@ -49,7 +49,7 @@ body{
      margin-left: -50%;
      width: 150%;
    }
- }*/
+ }
 
 
  /*Third part*/
@@ -76,17 +76,18 @@ body{
   justify-content: center;
   background-image: url("arrows-home.svg");
   background-position: center;
-  background-size:contain;
+  background-size:auto;
   background-repeat: no-repeat;
+  
  }
 
  .secondCol{
-  width: 400px;
-  height: 500px;
+  width: 600px;
+  height: 700px;
   
   background-image: url("coconutCaramel.svg");
   background-position: center;
-  background-size:contain;
+  background-size:cover;
   background-repeat: no-repeat;
   
  }
@@ -95,15 +96,19 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 80px;
+  justify-content:left;
+  gap: 100px;
+  margin-bottom: 120px;
+  width: 400px;
  }
  .thirdCol{
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items:left;
   justify-content: center;
-  gap: 100px
+  gap: 120px;
+  margin-bottom: 160px;
+  width: 400px;
   
  }
 
@@ -112,8 +117,8 @@ body{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 400px;
+  justify-content: right;
+  width: 200px;
   gap: 10px;
  }
 
@@ -122,8 +127,8 @@ body{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 400px;
+  justify-content: left;
+  max-width: 300px;
   gap: 10px;
  }
 
