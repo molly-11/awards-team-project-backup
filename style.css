@@ -2,7 +2,7 @@
 /*Moving list*/
 
 body{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .animLine{
@@ -16,7 +16,7 @@ body{
 }
 
 .movingUl{
-  width: 100%;
+  width: 240%;
   font-weight: 700;
   list-style: none;
   display: flex;
@@ -24,9 +24,10 @@ body{
   align-items: center;
   justify-content: space-around;
   animation-name: slidearound;
-  animation-duration: 13s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  overflow: hidden;
   
 }
 
@@ -35,20 +36,41 @@ body{
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: 18px;
+  gap: 10px;
   
+}
+
+.smallIcon{
+  width: 22px;
+  height: 22px;
+  padding: 8px;
+}
+.iconDiv{
+  border: 1px solid grey;
+  border-radius: 50%;
+  max-width: fit-content;
+  max-height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 
 @keyframes slidearound {
-  from {
+
+  from { transform: translateX(0); }
+  to { transform: translateX(-20%); }
+
+  /*from {
      margin-right: -50%;
-     width: 150%;
+     width: 250%;
    }
- 
    to {
      margin-left: -50%;
-     width: 150%;
-   }
+     width: 250%;
+   }*/
  }
 
 
@@ -131,6 +153,52 @@ body{
   max-width: 300px;
   gap: 10px;
  }
+
+ .thirdPart >h1{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+ }
+
+ .orangeLetters{
+  color: #FF9A30;
+
+ }
+
+
+ /*Button*/
+
+ .buttonDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #3356AE;
+  border-radius: 45px;
+  width: fit-content;
+  gap: 30px;
+}
+
+.box {
+  padding: 10px;
+  margin: 10px;
+  color: #3356AE;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+}
+
+.active {
+  background-color: #3356AE;
+  color: white;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+}
 
  
 
